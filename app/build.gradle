@@ -23,7 +23,7 @@ ext {
     playServicesVersion = '15.0.1'
     audioVersion = System.getenv("AUDIO_VERSION") ?: '1.209.0@aar'
     stethoVersion = '1.5.0'
-    zMessagingVersion = "142.0.2301"
+    zMessagingVersion = "142.0.992-PR"
     paging_version = "1.0.0"
 
     avsVersion = '4.9.170@aar'
@@ -138,6 +138,7 @@ android {
         buildConfigField 'String',  'TEAMS_URL',                   "\"$config.teamsUrl\""
         buildConfigField 'String',  'ACCOUNTS_URL',                "\"$config.accountsUrl\""
         buildConfigField 'String',  'WEBSITE_URL',                 "\"$config.websiteUrl\""
+        buildConfigField 'boolean',  'FORCE_HIDE_SCREEN_CONTENT',  "$config.force_hide_screen_content"
     }
 
     packagingOptions {
